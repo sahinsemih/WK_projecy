@@ -1,0 +1,44 @@
+li a {
+    display: block ;
+    width: 60px;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+#ploegen {
+float: left;
+height: 100%;
+width: 25%;
+border: red
+
+}
+
+#stadion {
+height: 100%;
+width: 25%;   
+float: left;
+}
+    
+
+
+
+#opstelling{
+    float: left;
+height: 100%;
+width: 25%;
+
+}
+
+#simulatie{
+float: left;
+height: 100%;
+width: 25%;
+
+}
+.imgid{
+max-height:100%; max-width:100%;
+}
