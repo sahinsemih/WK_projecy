@@ -1,50 +1,50 @@
 let poules = {
     'A': [
-        {land: "Egypte", vlag: "assets/landen/egy.png"},
-        {land: "Rusland", vlag: "assets/landen/rus.png"},
-        {land: "Saudi-Arabië", vlag: "assets/landen/sar.png"},
-        {land: "Uruguay", vlag: "assets/landen/uru.png"}
+        {land: "Egypte", vlag: "images/egy.png"},
+        {land: "Rusland", vlag: "images/rus.png"},
+        {land: "Saudi-Arabië", vlag: "images/sar.png"},
+        {land: "Uruguay", vlag: "images/uru.png"}
     ],
     'B': [
-        {land: "Iran", vlag: "assets/landen/irn.png"},
-        {land: "Marokko", vlag: "assets/landen/mor.png"},
-        {land: "Portugal", vlag: "assets/landen/por.png"},
-        {land: "Spanje", vlag: "assets/landen/esp.png"}
+        {land: "Iran", vlag: "images/irn.png"},
+        {land: "Marokko", vlag: "images/mor.png"},
+        {land: "Portugal", vlag: "images/por.png"},
+        {land: "Spanje", vlag: "images/esp.png"}
     ],
     'C': [
-        {land: "Australië", vlag: "assets/landen/aus.png"},
-        {land: "Denemarken", vlag: "assets/landen/den.png"},
-        {land: "Frankrijk", vlag: "assets/landen/fra.png"},
-        {land: "Peru", vlag: "assets/landen/per.png"}
+        {land: "Australië", vlag: "images/aus.png"},
+        {land: "Denemarken", vlag: "images/den.png"},
+        {land: "Frankrijk", vlag: "images/fra.png"},
+        {land: "Peru", vlag: "images/per.png"}
     ],
     'D': [
-        {land: "Argentinië", vlag: "assets/landen/arg.png"},
-        {land: "Kroatië", vlag: "assets/landen/cro.png"},
-        {land: "Ijsland", vlag: "assets/landen/isl.png"},
-        {land: "Nigeria", vlag: "assets/landen/nig.png"}
+        {land: "Argentinië", vlag: "images/arg.png"},
+        {land: "Kroatië", vlag: "images/cro.png"},
+        {land: "Ijsland", vlag: "images/isl.png"},
+        {land: "Nigeria", vlag: "images/nig.png"}
     ],
     'E': [
-        {land: "Brazilië", vlag: "assets/landen/bra.png"},
-        {land: "Costa Rica", vlag: "assets/landen/crc.png"},
-        {land: "Zwitserland", vlag: "assets/landen/sui.png"},
-        {land: "Servië", vlag: "assets/landen/srb.png"}
+        {land: "Brazilië", vlag: "images/bra.png"},
+        {land: "Costa Rica", vlag: "images/crc.png"},
+        {land: "Zwitserland", vlag: "images/sui.png"},
+        {land: "Servië", vlag: "images/srb.png"}
     ],
     'F': [
-        {land: "Duitsland", vlag: "assets/landen/ger.png"},
-        {land: "Zuid-Korea", vlag: "assets/landen/kor.png"},
-        {land: "Mexico", vlag: "assets/landen/mex.png"},
-        {land: "Zweden", vlag: "assets/landen/swe.png"}
+        {land: "Duitsland", vlag: "images/ger.png"},
+        {land: "Zuid-Korea", vlag: "images/kor.png"},
+        {land: "Mexico", vlag: "images/mex.png"},
+        {land: "Zweden", vlag: "images/swe.png"}
     ],
     'G': [
-        {land: "België", vlag: "assets/landen/bel.png"},
-        {land: "Engeland", vlag: "assets/landen/eng.png"},
-        {land: "Panama", vlag: "assets/landen/pan.png"},
-        {land: "Tunesië", vlag: "assets/landen/tun.png"}
+        {land: "België", vlag: "images/bel.png"},
+        {land: "Engeland", vlag: "images/eng.png"},
+        {land: "Panama", vlag: "images/pan.png"},
+        {land: "Tunesië", vlag: "images/tun.png"}
     ],
     'H': [
-        {land: "Colombia", vlag: "assets/landen/col.png"},
-        {land: "Japan", vlag: "assets/landen/jap.png"},
-        {land: "Polen", vlag: "assets/landen/pol.png"},
-        {land: "Senegal", vlag: "assets/landen/sen.png"}
+        {land: "Colombia", vlag: "images/col.png"},
+        {land: "Japan", vlag: "images/jap.png"},
+        {land: "Polen", vlag: "images/pol.png"},
+        {land: "Senegal", vlag: "images/sen.png"}
     ]
 };

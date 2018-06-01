@@ -1,44 +1,121 @@
-li a {
-    display: block ;
-    width: 60px;
-}
-
-.flex-container{
-    display: flex;
-    flex-flow: row wrap;
-    height: 100%;
-}
-
-#ploegen {
-float: left;
-height: 100%;
-width: 25%;
-border: red
+.img{
+  background-repeat: no-repeat;
+  display: flex;
+  width: 25%;
+  height: 100vh;
+  float: left;
+  background-size: cover;
+  max-width: 100%;
+  z-index: 0;
+ 
 
 }
 
-#stadion {
-height: 100%;
-width: 25%;   
-float: left;
-}
-    
-
-
-
-#opstelling{
-    float: left;
-height: 100%;
-width: 25%;
+.logo{
+  
+  position: absolute;
+ padding-left: 750px;
 
 }
+.logoopstelling{
 
-#simulatie{
-float: left;
-height: 100%;
-width: 25%;
+position: relative;
+width: 350px;
+display: inline-flex;
+justify-content: center;
+}
+#logoborder{
+  width: 350px;
+  border-bottom-right-radius: 35px;
+   border-bottom-left-radius: 35px;
+}
+.timer{
+  position: absolute;
+  text-align: center;
+  border: 3px solid;
+  background-color: black;
+  color: white;
+  border-color: white;
+  width: 350px;
+  top: 90%;
+  left: 750px;
+}
+
+.tits{
+   display: flex;
+  width: 25%;
+  height: 100vh;
+  float: left;
+   max-width: 100%;
+opacity: 0.5;
+z-index: 1
 
 }
-.imgid{
-max-height:100%; max-width:100%;
+.img:hover{
+opacity: 0.5;
+  }
+
+
+
+.veldbg{
+  background-repeat: no-repeat;
+  height:auto;
+  width: 75%;
+  background-size: cover;
+  float: left;
+  height: 100%;
+  z-index: 0;
+
+}
+.spelers{
+  float: left;
+  height: 100%;
+  width: 25%;
+
+}
+.spelersimg{
+ border-radius: 50%;
+ width: 200px;
+ height: 120px;
+ background-position: cover;
+ 
+}
+
+
+
+.image-wrapper {
+  box-sizing:border-box;
+  float: left;
+  margin-bottom:5px;
+  width: 50%;
+
+}
+
+.image-wrapper:nth-child(even)
+{
+  padding-left:5px;
+}
+
+.image-wrapper:nth-child(odd)
+{
+  padding-right:5px;
+}
+
+.image-wrapper > img {
+  width: 50%;
+}
+
+.image-wrapper > span {
+  display: inline-block;
+  width: 100%;
+  }
+
+  #drop {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #aaaaaa;
+    border-radius: 50%;
+    background-image: contain;
+    margin-bottom: 5px;
+   
 }

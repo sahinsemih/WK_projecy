@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<title>Soccer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/mert.css">
+
+
+<body>
+	<div class="parent">
+		<img class="logoopstelling" src="logo_wk_2018.png">
+		<div class="spelers">
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/alderweireld.jpg"draggable="true" id="drag1" ondragstart="drag(event)">
+				<span>Alderweireld</span>
+			</div>
+
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/batshuayi.jpg"draggable="true"  id="drag2" ondragstart="drag(event)" >
+				<span>Batshuayi</span>
+			</div>
+
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/carrasco.jpg" draggable="true"  id="drag3"ondragstart="drag(event)">
+				<span>Carrasco</span>
+			</div>
+
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/ciman.jpg"draggable="true"  id="drag4"ondragstart="drag(event)">
+				<span>Ciman</span>
+			</div>
+
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/courtois.jpg"draggable="true" id="drag5" ondragstart="drag(event)">
+				<span>Courtois</span>
+			</div>
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/debruyne.jpg"draggable="true" id="drag6"ondragstart="drag(event)">
+				<span>DeBruyne</span>
+			</div>
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/dembele.jpg"draggable="true"  id="drag7"ondragstart="drag(event)">
+				<span>Dembele</span>
+			</div>
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/fellaini.jpg"draggable="true" id="drag8"ondragstart="drag(event)">
+				<span>Fellaini</span>
+			</div>
+
+			<div class="image-wrapper">
+				<img class="spelersimg" src="spelers/hazard.jpg"draggable="true" id="drag9" ondragstart="drag(event)">
+				<span>Hazard</span></div>
+
+				<div class="image-wrapper">
+					<img class="spelersimg" src="spelers/lukaku.jpg"draggable="true" id="drag10" ondragstart="drag(event)">
+					<span>Lukaku</span>
+				</div>
+
+
+				<div class="image-wrapper">
+					<img class="spelersimg" src="spelers/kompany.jpg"draggable="true"  id="drag11"ondragstart="drag(event)">
+					<span>Kompany</span>
+				</div>
+
+				<div class="image-wrapper">
+					<img class="spelersimg" src="spelers/mertens.jpg"draggable="true"  id="drag12"ondragstart="drag(event)  id="drag>
+					<span>Mertens</span>
+				</div>
+			</div>
+			<div class="veldbg">
+<img src="images/veld.jpg">
+				<div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+
+				<div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+				<div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+				<div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+				</div>
+
+
+			</div>
+
+
+		</div>
+		<script>
+			
+			function allowDrop(ev) {
+				ev.preventDefault();
+			}
+			function drag(ev) {
+				ev.dataTransfer.setData("text", ev.target.id);
+			}
+			function drop(ev) {
+				ev.preventDefault();
+				var data = ev.dataTransfer.getData("text");
+				ev.target.appendChild(document.getElementById(data));
+			}
+
+
+
+		</script>
+	</body>
+	</html>
