@@ -4,13 +4,156 @@
     <meta charset="UTF-8">
     <title>Ploegen</title>
     <link rel="stylesheet" type="text/css" href="wereldbeker.css">
+
+    <script type="text/javascript">
+
+        function myfunction() {
+            let Team = document.getElementsByName("name")[0].value;
+            let short = document.getElementsByName("shortcode")[0].value;
+            let desc = document.getElementsByName("beschrijving")[0].value;
+            let win = document.getElementById("winner");
+            let lose = document.getElementById("loser");
+            let lastwin = document.getElementById("lastwin");
+
+            let Belgium = new Image(120, 90);
+            let Brazil = new Image(120, 90);
+            let Col = new Image(120, 90);
+            let Argentina = new Image(120, 90);
+            let Australia = new Image(120, 90);
+            let Japan = new Image(120, 90);
+            let Russia = new Image(120, 90);
+            Belgium.src = "landen/bel.png";
+            Brazil.src = "landen/bra.png";
+            Col.src = "landen/col.png";
+            Argentina.src = "landen/arg.png";
+            Australia.src = "landen/aus.png";
+            Japan.src = "landen/jap.png";
+            Russia.src = "landen/rus.png";
+
+            if (Team === "BE" && short === "win") {
+                 win.appendChild(Belgium);
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            } else if (Team == "BR" && short === "win") {
+                 win.appendChild(Brazil);
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            } else if (Team == "CO" && short === "win"){
+                 win.appendChild(Col );
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            } else if (Team == "AR" && short === "win") {
+                 win.appendChild(Argentina );
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            } else if (Team == "AU" && short === "win") {
+                 win.appendChild(Australia );
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            } else if (Team == "JP" && short === "win") {
+                 win.appendChild(Japan );
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            } else if (Team == "RS" && short === "win") {
+                 win.appendChild(Russia );
+                win.innerHTML += desc;
+                win.style.visibility = "visible";
+            }else {
+
+            }
+
+            if (Team === "BE" && short === "lose") {
+                 lose.appendChild(Belgium);
+                lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            } else if (Team == "BR" && short === "lose") {
+                 lose.appendChild(Brazil);
+                 lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            } else if (Team == "CO" && short === "lose"){
+                 lose.appendChild(Col);
+                lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            } else if (Team == "AR" && short === "lose") {
+                 lose.appendChild(Argentina);
+                lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            } else if (Team == "AU" && short === "lose") {
+                 lose.appendChild(Australia);
+                lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            } else if (Team == "JP" && short === "lose") {
+                 lose.appendChild(Japan);
+                lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            } else if (Team == "RS" && short === "lose") {
+                 lose.appendChild(Russia);
+                lose.innerHTML += desc;
+                lose.style.visibility = "visible";
+            }else {
+
+            }
+
+            if (Team === "BE" && short === "lastwin") {
+                 lastwin.appendChild(Belgium);
+                lastwin.innerHTML += desc;
+                lastwin.style.visibility = "visible";
+            } else if (Team == "BR" && short === "lastwin") {
+                 lastwin.appendChild(Brazil);
+                lastwin.innerHTML += desc;
+                lastwin.style.visibility = "visible";
+            } else if (Team == "CO" && short === "lastwin"){
+                 lastwin.appendChild(Col);
+                lastwin.innerHTML += desc;
+                lastwin.style.visibility = "visible";
+            } else if (Team == "AR" && short === "lastwin") {
+                 lastwin.appendChild(Argentina);
+                lastwin.innerHTML += desc;
+                lastwin.style.visibility = "visible";
+            } else if (Team == "AU" && short === "lastwin") {
+                 lastwin.appendChild(Australia);
+                lastwin.innerHTML += desc;
+                lastwin.style.visibility = "visible";
+            } else if (Team == "JP" && short === "lastwin") {
+                 lastwin.appendChild(Japan);
+                lastwin.innerHTML += desc;
+                lastwin.innerHTML += "hello";
+                lastwin.style.visibility = "visible";
+            } else if (Team == "RS" && short === "lastwin") {
+                 lastwin.appendChild(Russia);
+                lastwin.innerHTML += desc;
+                lastwin.style.visibility = "visible";
+            }else {
+
+            }
+
+        }
+    </script>
 </head>
 <body style="background: white">
 
 <div id="container">
     <ul id="flex-container">
-        <li>Naam:<br>Shortcode:<br>Beschrijving:</li>
+        <li class="font"><img src="logo_wk_2018.png" height="80" width="300"/></li>
+        <li class="font">Naam:<datalist id="name">
+            <option value="AR">Argentina</option>
+            <option value="AU">Australia</option>
+            <option value="BE">Belgium</option>
+            <option value="BR">Brazil</option>
+            <option value="CO">Colombia</option>
+            <option value="JP">Japan</option>
+            <option value="RS">Russia</option>
+        </datalist>
+            <input list="name" name="name" placeholder="Team name"><br>Shortcode:<input type="text" name="shortcode" placeholder="Team shortcode"><br>Beschrijving:<input type="text" name="beschrijving" placeholder="Team description"><br><button type="button" onclick="myfunction()">Toevoegen</button>  </li>
     </ul>
+</div>
+<div>
+    <ul class="flex-container rowwinlose ">
+        <li class="flex-item"; id="winner"; style="visibility: hidden" ></li>
+        <li class="flex-item"; id="loser"; style="visibility: hidden"></li>
+        <li class="flex-item"; id="lastwin"; style="visibility: hidden"></li>
+    </ul>
+
 </div>
 </body>
 </html>
